@@ -2,7 +2,7 @@
 
 **Aspiring Agentic AI Engineer** — building practical AI systems and documenting the journey through real projects.
 
-Currently focused on learning Agentic AI, shipping practical projects, and sharing what I learn along the way. The goal is simple: build consistently, solve real problems, improve with every project.
+Currently focused on learning Agentic AI, building practical projects, and sharing what I learn along the way. The goal is simple: build consistently, solve real problems, improve with every project.
 
 ---
 
