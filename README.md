@@ -23,7 +23,7 @@ My journey into AI started through Panaversity, where I discovered Agentic AI an
 
 I'm building a portfolio of practical AI projects — one at a time, finished properly, documented honestly.
 
-Rather than rushing to fill this section, I'd rather ship one thing well than start five things at once. First project coming soon.
+Rather than rushing to fill this section, I'd rather ship one thing well than start five things at once. Every project here is built to solve a real problem, be well documented, and leave me a better engineer than when I started.
 
 ## Learning Journey
 
