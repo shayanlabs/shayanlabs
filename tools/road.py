@@ -1,4 +1,4 @@
-"""Draws assets/road.svg, the profile's experiment log.
+"""Draws assets/road.svg, the profile's ladder (the syllabus chapters).
 
 To update it: change a station's status below, then run
     python3 tools/road.py
@@ -8,12 +8,14 @@ from pathlib import Path
 
 STATIONS = [
     # (number, title, one line, status, icon)
-    ("01", "PERCEPTRON", "one neuron learns AND, OR", "building", "neuron"),
-    ("02", "XOR NETWORK", "hidden layer + backprop by hand", "next", "net"),
-    ("03", "MNIST", "reads handwritten digits", "planned", "digit"),
+    ("01", "PYTHON", "lists, functions, files, OOP", "building", "python"),
+    ("02", "DEV TOOLS", "git, terminal, AI coding tools", "next", "git"),
+    ("03", "MATHS FOR ML", "algebra, calculus, statistics", "planned", "maths"),
+    ("04", "DATA", "NumPy, pandas, charts, SQL", "planned", "data"),
 ]
+THEN = "then → classical ML · neural nets · deep learning · LLMs &amp; agents"
 
-W, H, Y = 1200, 340, 150
+W, H, Y = 1200, 340, 158
 MINT, AMBER, BLUE = "#5eead4", "#f5b544", "#5b8cff"
 LOOK = {  # status -> (colour, pill text, pill fill)
     "shipped": (MINT, "SHIPPED", "#0d2a26"),
@@ -24,23 +26,21 @@ LOOK = {  # status -> (colour, pill text, pill fill)
 
 
 def icon(kind, x, y, c):
-    if kind == "neuron":
-        return (f'<path d="M{x-26} {y-14} L{x-4} {y} M{x-26} {y+14} L{x-4} {y} M{x+12} {y} L{x+28} {y}" '
-                f'stroke="{c}" stroke-width="2.4"/><circle cx="{x+4}" cy="{y}" r="9" fill="none" stroke="{c}" stroke-width="2.4"/>')
-    if kind == "net":
-        ins, hid, out = [(x-24, y-12), (x-24, y+12)], [(x, y-16), (x, y+16)], [(x+24, y)]
-        s = "".join(f'<path d="M{a[0]} {a[1]} L{b[0]} {b[1]}" stroke="{c}" stroke-width="1.4" opacity=".7"/>'
-                    for a, b in [(a, b) for a in ins for b in hid] + [(a, b) for a in hid for b in out])
-        return s + "".join(f'<circle cx="{p[0]}" cy="{p[1]}" r="5" fill="#0a0f1a" stroke="{c}" stroke-width="2"/>' for p in ins + hid + out)
-    seven = ["11111", "00001", "00010", "00100", "00100"]
-    return "".join(f'<rect x="{x-25+q*10}" y="{y-25+r*10}" width="8" height="8" rx="1.5" fill="{c if v == "1" else "none"}" '
-                   f'stroke="{c}" stroke-opacity=".45" stroke-width="1"/>' for r, row in enumerate(seven) for q, v in enumerate(row))
+    if kind == "python":
+        return (f'<path d="M{x-24} {y-12} L{x-10} {y} L{x-24} {y+12}" fill="none" stroke="{c}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+                f'<path d="M{x-2} {y+13} H{x+22}" stroke="{c}" stroke-width="3" stroke-linecap="round" class="blink"/>')
+    if kind == "git":
+        return (f'<path d="M{x-12} {y-20} V{y+20} M{x-12} {y-2} C{x-12} {y-14} {x+14} {y-10} {x+14} {y-20}" fill="none" stroke="{c}" stroke-width="2.4"/>'
+                + "".join(f'<circle cx="{a}" cy="{b}" r="5.5" fill="#0a0f1a" stroke="{c}" stroke-width="2.4"/>' for a, b in [(x-12, y-20), (x-12, y+20), (x+14, y-20)]))
+    if kind == "maths":
+        return (f'<text x="{x}" y="{y+13}" text-anchor="middle" class="sans" font-size="38" font-weight="700" fill="{c}">∑</text>')
+    return "".join(f'<rect x="{x-22+i*12}" y="{y+18-h}" width="8" height="{h}" rx="2" fill="{c}" opacity="{0.5+i*0.15:.2f}"/>' for i, h in enumerate([14, 26, 20, 34]))
 
 
 def build():
     n = len(STATIONS)
     xs = [int(W / (n + 1) * (i + 1)) for i in range(n)]
-    body = '<text x="48" y="58" class="mono" font-size="16" fill="#5b8cff">02 // EXPERIMENT LOG</text>'
+    body = '<text x="48" y="40" class="mono" font-size="16" fill="#5b8cff">02 // THE LADDER</text>'
     for i in range(n - 1):  # the track between stations
         a, b = STATIONS[i][3], STATIONS[i + 1][3]
         d = f'M{xs[i]+52} {Y} H{xs[i+1]-52}'
@@ -72,7 +72,8 @@ def build():
     body += f'''<g class="mono" font-size="13" fill="#6f84a6"><circle cx="880" cy="314" r="6" fill="{MINT}"/><text x="892" y="319">shipped</text>
 <circle cx="976" cy="314" r="6" fill="none" stroke="{AMBER}" stroke-width="2" stroke-dasharray="3 2"/><text x="988" y="319">building</text>
 <circle cx="1074" cy="314" r="6" fill="none" stroke="#3a5f9e" stroke-width="1.5" stroke-dasharray="1.5 2.5"/><text x="1086" y="319">planned</text></g>'''
-    alt = "Experiment log: " + ", ".join(f"{s[0]} {s[1].title()} {s[3]}" for s in STATIONS)
+    body += f'<text x="48" y="319" class="mono" font-size="13" fill="#6f84a6">{THEN}</text>'
+    alt = "The ladder: " + ", ".join(f"{s[0]} {s[1].title()} {s[3]}" for s in STATIONS)
     return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" role="img" aria-label="{alt}">
 <defs>
 <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#14233b" stroke-width="1"/></pattern>
@@ -88,6 +89,8 @@ def build():
 @keyframes ring{{0%{{transform:scale(1);opacity:.8}}100%{{transform:scale(1.35);opacity:0}}}}
 .spin{{transform-box:fill-box;transform-origin:center;animation:spin 12s linear infinite}}
 @keyframes spin{{to{{transform:rotate(360deg)}}}}
+.blink{{animation:blink 1.1s steps(1) infinite}}
+@keyframes blink{{0%{{opacity:1}}50%,100%{{opacity:0}}}}
 </style>
 <g clip-path="url(#card)"><rect width="{W}" height="{H}" fill="#0a0f1a"/><rect width="{W}" height="{H}" fill="url(#grid)"/>
 {body}

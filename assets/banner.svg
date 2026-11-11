@@ -1,57 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Shayan Umer: building neural networks from scratch in plain Python">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Shayan Umer: AI writes the first draft, I read it, break it, and make it mine. Python first, then up the ladder.">
 <defs>
 <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#14233b" stroke-width="1"/></pattern>
-<linearGradient id="name" x1="0" x2="1"><stop offset="0" stop-color="#eef3fb"/><stop offset="1" stop-color="#8fb0ff"/></linearGradient>
-<radialGradient id="glow" cx="78%" cy="55%" r="45%"><stop offset="0" stop-color="#1d3b6e" stop-opacity=".55"/><stop offset="1" stop-color="#0a0f1a" stop-opacity="0"/></radialGradient>
-<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+<filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
 <clipPath id="card"><rect width="1200" height="360" rx="20"/></clipPath>
+<linearGradient id="name" x1="0" x2="1"><stop offset="0" stop-color="#eef3fb"/><stop offset="1" stop-color="#8fb0ff"/></linearGradient>
+<radialGradient id="glow" cx="80%" cy="70%" r="45%"><stop offset="0" stop-color="#3a2a0a" stop-opacity=".55"/><stop offset="1" stop-color="#0a0f1a" stop-opacity="0"/></radialGradient>
 </defs>
-<style>
-.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
+<style>.mono{font-family:ui-monospace,"SF Mono",Menlo,Consolas,"DejaVu Sans Mono",monospace}
 .sans{font-family:"Segoe UI",Inter,"Helvetica Neue",Arial,"DejaVu Sans",sans-serif}
-.e{stroke:#22385c;stroke-width:1.4}
-.p,.p2{fill:none;stroke-width:2.6;stroke-linecap:round;stroke-dasharray:7 100;stroke-dashoffset:7;animation:fire 3.2s linear infinite}
-.p{stroke:#5eead4} .p2{stroke:#f5b544}
-@keyframes fire{0%{stroke-dashoffset:7;opacity:0}8%{opacity:1}55%{stroke-dashoffset:-100;opacity:1}56%,100%{stroke-dashoffset:-100;opacity:0}}
-.ni,.nh,.no{fill:#0d1626;stroke-width:2} .ni{stroke:#5b8cff} .nh{stroke:#5eead4} .no{stroke:#f5b544}
-.core{fill:#e8eef9}
-.node{transform-box:fill-box;transform-origin:center;animation:beat 3.2s ease-in-out infinite}
-@keyframes beat{0%,100%{opacity:.75}50%{opacity:1}}
-.w{fill:#8fa3c4;font-size:13px;opacity:0;animation:tick 6s steps(1) infinite}
-.w.b{animation-delay:2s} .w.c{animation-delay:4s}
-@keyframes tick{0%{opacity:1}33.3%,100%{opacity:0}}
-.cur{animation:blink 1.1s steps(1) infinite}
-@keyframes blink{0%{opacity:1}50%,100%{opacity:0}}
-.live{animation:live 1.6s ease-in-out infinite}
-@keyframes live{0%,100%{opacity:1}50%{opacity:.25}}
-.chip{fill:#0f1a2c;stroke:#263e66} .chipt{fill:#b9c7de;font-size:15px}
-</style>
-<g clip-path="url(#card)">
-<rect width="1200" height="360" fill="#0a0f1a"/>
-<rect width="1200" height="360" fill="url(#grid)"/>
+.cur{animation:blink 1.1s steps(1) infinite}@keyframes blink{0%{opacity:1}50%,100%{opacity:0}}
+.live{animation:live 1.6s ease-in-out infinite}@keyframes live{0%,100%{opacity:1}50%{opacity:.25}}
+.breathe{animation:breathe 2.4s ease-in-out infinite}@keyframes breathe{0%,100%{opacity:.15}50%{opacity:.45}}
+.climb{fill:none;stroke-dasharray:6 100;animation:climb 3.5s linear infinite}
+@keyframes climb{0%{stroke-dashoffset:6;opacity:0}10%{opacity:1}80%{opacity:.8}100%{stroke-dashoffset:-100;opacity:0}}</style>
+<g clip-path="url(#card)"><rect width="1200" height="360" fill="#0a0f1a"/><rect width="1200" height="360" fill="url(#grid)"/>
 <rect width="1200" height="360" fill="url(#glow)"/>
-<rect width="1200" height="44" fill="#0d1524"/>
-<line x1="0" y1="44" x2="1200" y2="44" stroke="#1c2d49"/>
+<rect width="1200" height="44" fill="#0d1524"/><line x1="0" y1="44" x2="1200" y2="44" stroke="#1c2d49"/>
 <circle cx="26" cy="22" r="6" fill="#ff5f57"/><circle cx="46" cy="22" r="6" fill="#febc2e"/><circle cx="66" cy="22" r="6" fill="#28c840"/>
-<text x="92" y="27" class="mono" font-size="14" fill="#6f84a6">shayanlabs@lab: ~/ai-journey — python3 train.py</text>
-<circle cx="1062" cy="22" r="5" fill="#5eead4" class="live"/>
-<text x="1074" y="27" class="mono" font-size="14" fill="#5eead4">training</text>
-<text x="58" y="104" class="mono" font-size="16" fill="#5b8cff">// builder log · neural networks from scratch</text>
+<text x="92" y="27" class="mono" font-size="14" fill="#6f84a6">shayanlabs@lab: ~/python-projects — python3 learn.py</text>
+<circle cx="1052" cy="22" r="5" fill="#5eead4" class="live"/><text x="1064" y="27" class="mono" font-size="14" fill="#5eead4">climbing</text>
+<text x="58" y="104" class="mono" font-size="16" fill="#5b8cff">// builder log · python first, then up the ladder</text>
 <text x="54" y="182" class="sans" font-size="80" font-weight="900" letter-spacing="1" fill="url(#name)">SHAYAN UMER</text>
-<text x="58" y="226" class="mono" font-size="19" fill="#d7e0ee">No PyTorch. No NumPy. Just math, random, and stubbornness.</text>
-<text x="58" y="258" class="mono" font-size="19" fill="#6f84a6">&gt; building AI one neuron at a time<tspan class="cur" fill="#5eead4">▌</tspan></text>
-<rect x="58" y="292" width="139" height="32" rx="16" class="chip"/><text x="73" y="313" class="chipt mono">plain python</text>
-<rect x="207.2" y="292" width="185" height="32" rx="16" class="chip"/><text x="222.2" y="313" class="chipt mono">zero dependencies</text>
-<rect x="401.9" y="292" width="194" height="32" rx="16" class="chip"/><text x="416.9" y="313" class="chipt mono">learning in public</text>
-<g opacity=".9"><path d="M820,120 L960,92" class="e"/><path d="M820,120 L960,165" class="e"/><path d="M820,120 L960,238" class="e"/><path d="M820,120 L960,311" class="e"/><path d="M820,200 L960,92" class="e"/><path d="M820,200 L960,165" class="e"/><path d="M820,200 L960,238" class="e"/><path d="M820,200 L960,311" class="e"/><path d="M820,280 L960,92" class="e"/><path d="M820,280 L960,165" class="e"/><path d="M820,280 L960,238" class="e"/><path d="M820,280 L960,311" class="e"/><path d="M960,92 L1100,165" class="e"/><path d="M960,92 L1100,238" class="e"/><path d="M960,165 L1100,165" class="e"/><path d="M960,165 L1100,238" class="e"/><path d="M960,238 L1100,165" class="e"/><path d="M960,238 L1100,238" class="e"/><path d="M960,311 L1100,165" class="e"/><path d="M960,311 L1100,238" class="e"/></g>
-<g filter="url(#blur)" opacity=".7"><path d="M820,120 L960,92" pathLength="100" class="p2" style="animation-delay:0.00s"/><path d="M820,120 L960,165" pathLength="100" class="p" style="animation-delay:0.37s"/><path d="M820,120 L960,238" pathLength="100" class="p" style="animation-delay:0.74s"/><path d="M820,120 L960,311" pathLength="100" class="p2" style="animation-delay:1.11s"/><path d="M820,200 L960,92" pathLength="100" class="p" style="animation-delay:1.48s"/><path d="M820,200 L960,165" pathLength="100" class="p" style="animation-delay:1.85s"/><path d="M820,200 L960,238" pathLength="100" class="p2" style="animation-delay:2.22s"/><path d="M820,200 L960,311" pathLength="100" class="p" style="animation-delay:2.59s"/><path d="M820,280 L960,92" pathLength="100" class="p" style="animation-delay:2.96s"/><path d="M820,280 L960,165" pathLength="100" class="p2" style="animation-delay:0.13s"/><path d="M820,280 L960,238" pathLength="100" class="p" style="animation-delay:0.50s"/><path d="M820,280 L960,311" pathLength="100" class="p" style="animation-delay:0.87s"/><path d="M960,92 L1100,165" pathLength="100" class="p2" style="animation-delay:1.24s"/><path d="M960,92 L1100,238" pathLength="100" class="p" style="animation-delay:1.61s"/><path d="M960,165 L1100,165" pathLength="100" class="p" style="animation-delay:1.98s"/><path d="M960,165 L1100,238" pathLength="100" class="p2" style="animation-delay:2.35s"/><path d="M960,238 L1100,165" pathLength="100" class="p" style="animation-delay:2.72s"/><path d="M960,238 L1100,238" pathLength="100" class="p" style="animation-delay:3.09s"/><path d="M960,311 L1100,165" pathLength="100" class="p2" style="animation-delay:0.26s"/><path d="M960,311 L1100,238" pathLength="100" class="p" style="animation-delay:0.63s"/></g>
-<g><path d="M820,120 L960,92" pathLength="100" class="p2" style="animation-delay:0.00s"/><path d="M820,120 L960,165" pathLength="100" class="p" style="animation-delay:0.37s"/><path d="M820,120 L960,238" pathLength="100" class="p" style="animation-delay:0.74s"/><path d="M820,120 L960,311" pathLength="100" class="p2" style="animation-delay:1.11s"/><path d="M820,200 L960,92" pathLength="100" class="p" style="animation-delay:1.48s"/><path d="M820,200 L960,165" pathLength="100" class="p" style="animation-delay:1.85s"/><path d="M820,200 L960,238" pathLength="100" class="p2" style="animation-delay:2.22s"/><path d="M820,200 L960,311" pathLength="100" class="p" style="animation-delay:2.59s"/><path d="M820,280 L960,92" pathLength="100" class="p" style="animation-delay:2.96s"/><path d="M820,280 L960,165" pathLength="100" class="p2" style="animation-delay:0.13s"/><path d="M820,280 L960,238" pathLength="100" class="p" style="animation-delay:0.50s"/><path d="M820,280 L960,311" pathLength="100" class="p" style="animation-delay:0.87s"/><path d="M960,92 L1100,165" pathLength="100" class="p2" style="animation-delay:1.24s"/><path d="M960,92 L1100,238" pathLength="100" class="p" style="animation-delay:1.61s"/><path d="M960,165 L1100,165" pathLength="100" class="p" style="animation-delay:1.98s"/><path d="M960,165 L1100,238" pathLength="100" class="p2" style="animation-delay:2.35s"/><path d="M960,238 L1100,165" pathLength="100" class="p" style="animation-delay:2.72s"/><path d="M960,238 L1100,238" pathLength="100" class="p" style="animation-delay:3.09s"/><path d="M960,311 L1100,165" pathLength="100" class="p2" style="animation-delay:0.26s"/><path d="M960,311 L1100,238" pathLength="100" class="p" style="animation-delay:0.63s"/></g>
-<g class="node" style="animation-delay:2.05s"><circle cx="820" cy="120" r="15" class="ni"/><circle cx="820" cy="120" r="5" class="core"/></g><g class="node" style="animation-delay:2.55s"><circle cx="820" cy="200" r="15" class="ni"/><circle cx="820" cy="200" r="5" class="core"/></g><g class="node" style="animation-delay:0.05s"><circle cx="820" cy="280" r="15" class="ni"/><circle cx="820" cy="280" r="5" class="core"/></g><g class="node" style="animation-delay:2.40s"><circle cx="960" cy="92" r="15" class="nh"/><circle cx="960" cy="92" r="5" class="core"/></g><g class="node" style="animation-delay:2.90s"><circle cx="960" cy="165" r="15" class="nh"/><circle cx="960" cy="165" r="5" class="core"/></g><g class="node" style="animation-delay:0.40s"><circle cx="960" cy="238" r="15" class="nh"/><circle cx="960" cy="238" r="5" class="core"/></g><g class="node" style="animation-delay:0.90s"><circle cx="960" cy="311" r="15" class="nh"/><circle cx="960" cy="311" r="5" class="core"/></g><g class="node" style="animation-delay:2.75s"><circle cx="1100" cy="165" r="15" class="no"/><circle cx="1100" cy="165" r="5" class="core"/></g><g class="node" style="animation-delay:0.25s"><circle cx="1100" cy="238" r="15" class="no"/><circle cx="1100" cy="238" r="5" class="core"/></g>
-<text x="872" y="128" class="mono w">w 0.43</text><text x="872" y="128" class="mono w b">w 0.61</text><text x="872" y="128" class="mono w c">w 0.89</text>
-<text x="1012" y="214" class="mono w">w -0.72</text><text x="1012" y="214" class="mono w b">w -1.30</text><text x="1012" y="214" class="mono w c">w -2.04</text>
-<text x="800" y="345" class="mono" font-size="13" fill="#4f6385">inputs</text>
-<text x="942" y="345" class="mono" font-size="13" fill="#4f6385">hidden</text>
-<text x="1078" y="345" class="mono" font-size="13" fill="#4f6385">output</text>
-</g>
-<rect x=".5" y=".5" width="1199" height="359" rx="20" fill="none" stroke="#1f3355"/>
-</svg>
+<text x="58" y="226" class="mono" font-size="20" fill="#d7e0ee">AI writes the first draft.</text>
+<text x="58" y="256" class="mono" font-size="20" fill="#d7e0ee">I read it, break it, and make it mine.<tspan class="cur" fill="#5eead4">▌</tspan></text>
+<rect x="58" y="290" width="94" height="32" rx="16" fill="#0f1a2c" stroke="#263e66"/><text x="73" y="311" class="mono" font-size="15" fill="#b9c7de">spec it</text><rect x="161.7" y="290" width="94" height="32" rx="16" fill="#0f1a2c" stroke="#263e66"/><text x="176.7" y="311" class="mono" font-size="15" fill="#b9c7de">read it</text><rect x="265.4" y="290" width="103" height="32" rx="16" fill="#0f1a2c" stroke="#263e66"/><text x="280.4" y="311" class="mono" font-size="15" fill="#b9c7de">break it</text><rect x="378.2" y="290" width="94" height="32" rx="16" fill="#0f1a2c" stroke="#263e66"/><text x="393.2" y="311" class="mono" font-size="15" fill="#b9c7de">make it</text><path d="M790 340 V74 M1130 340 V74" stroke="#1f3355" stroke-width="3"/><path d="M790 340 V74 M1130 340 V74" stroke="#f5b544" stroke-width="3" class="climb" pathLength="100"/><rect x="798" y="302" width="324" height="28" rx="8" fill="#f5b544" opacity=".25" filter="url(#blur)" class="breathe"/><rect x="798" y="302" width="324" height="28" rx="8" fill="#2a210c" stroke="#f5b544" stroke-width="2"/><text x="814" y="321" class="mono" font-size="14" fill="#f5b544">01  Python</text><text x="1106" y="321" text-anchor="end" class="mono" font-size="12" fill="#f5b544">◀ HERE</text><g opacity="0.88"><rect x="798" y="266" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="285" class="mono" font-size="14" fill="#a9bad6">02  Dev tools</text></g><g opacity="0.76"><rect x="798" y="230" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="249" class="mono" font-size="14" fill="#a9bad6">03  Maths for ML</text></g><g opacity="0.64"><rect x="798" y="194" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="213" class="mono" font-size="14" fill="#a9bad6">04  Data</text></g><g opacity="0.52"><rect x="798" y="158" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="177" class="mono" font-size="14" fill="#a9bad6">05  Classical ML</text></g><g opacity="0.40"><rect x="798" y="122" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="141" class="mono" font-size="14" fill="#a9bad6">06  Neural nets</text></g><g opacity="0.28"><rect x="798" y="86" width="324" height="28" rx="8" fill="#0b1322" stroke="#3a5f9e" stroke-dasharray="2 4"/><text x="814" y="105" class="mono" font-size="14" fill="#a9bad6">07  LLMs &amp; agents</text></g>
+</g><rect x=".5" y=".5" width="1199" height="359" rx="20" fill="none" stroke="#1f3355"/></svg>
