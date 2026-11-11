@@ -1,38 +1,64 @@
-# Hi, I'm Shayan Umer 👋
+<img src="assets/banner.svg" width="100%" alt="Shayan Umer: building neural networks from scratch in plain Python. No PyTorch. No NumPy. Just math, random, and stubbornness.">
 
-**Aspiring Agentic AI Engineer** — building practical AI systems and documenting the journey through real projects.
+### `00 // THE CONSTRAINT`
 
-Currently focused on learning Agentic AI, building practical projects, and sharing what I learn along the way. The goal is simple: build consistently, solve real problems, improve with every project.
+I build neural networks **from the ground up in plain Python**: no PyTorch, no NumPy, just lists, loops and the math. If I can't build it by hand, I don't understand it yet.
 
----
+### `01 // ACTIVE BENCH`
 
-## About
+<a href="https://github.com/shayanlabs/ai-journey/tree/main/01-perceptron"><img src="assets/bench.svg" width="100%" alt="Active bench: a perceptron learning the line that splits AND"></a>
 
-I'm a self-taught Python developer and aspiring Agentic AI Engineer with a strong interest in building intelligent systems that solve real problems.
+> **On the desk now:** the neuron can guess and measure its own error. Next it needs the update rule that actually changes its weights. After that, the goal is to watch it fail at XOR, on purpose.
 
-My journey into AI started through Panaversity, where I discovered Agentic AI and decided to focus on building real-world applications instead of just studying theory. I'm naturally curious, enjoy working through hard technical problems, and believe the best way to learn is by building, documenting, and iterating.
+### `02 // EXPERIMENT LOG`
 
-## Current Focus
+<a href="https://github.com/shayanlabs/ai-journey"><img src="assets/road.svg" width="100%" alt="Experiment log: 01 Perceptron on the bench, 02 XOR network next, 03 Auction Arena and 04 MNIST planned"></a>
 
-- 🤖 Learning Agentic AI Engineering through hands-on projects
-- 🐍 Strengthening my Python skills by building practical applications
-- 🧠 Exploring AI agents, multi-agent systems, RAG, MCP, and modern AI workflows
-- 🚀 Building one complete project at a time — documenting everything along the way
+| # | Experiment | Architecture | Math it unlocks | Status |
+|---|---|---|---|---|
+| 01 | [Perceptron](https://github.com/shayanlabs/ai-journey/tree/main/01-perceptron) | 2 inputs → 1 neuron | weights, bias, the perceptron rule | 🛠️ building |
+| 02 | [XOR network](https://github.com/shayanlabs/ai-journey/tree/main/02-xor-network) | 2 → 2 → 1 | sigmoid, loss, backprop by hand | ⏳ next |
+| 03 | AI Auction Arena | 8 bots, each with its own small brain | neuroevolution: the richest brains survive and mutate | 🗺️ planned |
+| 04 | MNIST from scratch | 784 → hidden → 10 | gradient descent at scale | 🗺️ planned |
 
-## Projects
+> 🏟️ **The one I can't wait for:** eight bots bid against each other for real cars. Nobody writes their strategy. Each one has its own neural-network brain, the poorest brains are replaced every season, and whatever tactics they end up with, they find themselves.
 
-I'm building a portfolio of practical AI projects — one at a time, finished properly, documented honestly.
+### `03 // FIELD NOTES & FAILURES`
 
-Rather than rushing to fill this section, I'd rather ship one thing well than start five things at once. Every project here is built to solve a real problem, be well documented, and leave me a better engineer than when I started.
+Real mistakes from my notebook, kept on purpose.
 
-## Learning Journey
+<details>
+<summary><b>I thought a neuron adds its weight to the input.</b></summary>
+<br>
 
-This GitHub is a record of the path to becoming an Agentic AI Engineer — built project by project, lesson by lesson. Every finished repo here represents something real that got done, not just planned.
+I wrote the total as `(weight + input) + bias`. Wrong: each input is **multiplied** by its own weight, the products are added, and then the bias. `0.4 × 1 + 0.9 × 0 − 0.3 = 0.1`, so the output is `1`.
+</details>
 
-## Connect
+<details>
+<summary><b>I thought a bigger weight makes the neuron "pick" that input.</b></summary>
+<br>
 
-Open to connecting with anyone passionate about AI, software engineering, or building in public. More ways to connect will show up here as the projects do.
+It never picks. Every input counts, and a bigger weight just pushes the total harder. With weights `5` and `3` and inputs `0` and `1`, only the second input changes anything, because `5 × 0` is still `0`.
+</details>
 
----
+<details>
+<summary><b><code>(0.0)</code> is not a list.</b></summary>
+<br>
 
-*Build with purpose. Finish what you start. Share what you learn. Improve with every project.*
+Round brackets around one number give you one plain number. `[0.0, 0.0]` is a list, and `(0.0, 0.0)` is a tuple. One character, and the whole neuron breaks.
+</details>
+
+### `04 // HOW I BUILD`
+
+```text
+learn   → the idea first, with checks I have to pass
+build   → step by step; I write every line, AI is my tutor and gives one hint, never the code
+ship    → push it, then write down what broke and what clicked
+```
+
+### `05 // PING`
+
+Building something from scratch too? Let's trade notes.
+[LinkedIn](https://www.linkedin.com/in/shayanlabs) · [Instagram](https://www.instagram.com/shayan.code)
+
+<sub><i>Build with purpose. Finish what you start. Share what you learn.</i></sub>
