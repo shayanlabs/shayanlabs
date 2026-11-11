@@ -12,16 +12,15 @@ I build neural networks **from the ground up in plain Python**: no PyTorch, no N
 
 ### `02 // EXPERIMENT LOG`
 
-<a href="https://github.com/shayanlabs/ai-journey"><img src="assets/road.svg" width="100%" alt="Experiment log: 01 Perceptron on the bench, 02 XOR network next, 03 Auction Arena and 04 MNIST planned"></a>
+<a href="https://github.com/shayanlabs/ai-journey"><img src="assets/road.svg" width="100%" alt="Experiment log: 01 Perceptron on the bench, 02 XOR network next, 03 MNIST planned"></a>
 
 | # | Experiment | Architecture | Math it unlocks | Status |
 |---|---|---|---|---|
 | 01 | [Perceptron](https://github.com/shayanlabs/ai-journey/tree/main/01-perceptron) | 2 inputs → 1 neuron | weights, bias, the perceptron rule | 🛠️ building |
 | 02 | [XOR network](https://github.com/shayanlabs/ai-journey/tree/main/02-xor-network) | 2 → 2 → 1 | sigmoid, loss, backprop by hand | ⏳ next |
-| 03 | AI Auction Arena | 8 bots, each with its own small brain | neuroevolution: the richest brains survive and mutate | 🗺️ planned |
-| 04 | MNIST from scratch | 784 → hidden → 10 | gradient descent at scale | 🗺️ planned |
+| 03 | MNIST from scratch | 784 → hidden → 10 | gradient descent at scale | 🗺️ planned |
 
-> 🏟️ **The one I can't wait for:** eight bots bid against each other for real cars. Nobody writes their strategy. Each one has its own neural-network brain, the poorest brains are replaced every season, and whatever tactics they end up with, they find themselves.
+Everyday Python builds live next door in [🐍 python-projects](https://github.com/shayanlabs/python-projects), starting with a 🏏 cricket scorecard.
 
 ### `03 // FIELD NOTES & FAILURES`
 
