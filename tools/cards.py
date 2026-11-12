@@ -15,7 +15,7 @@ BENCH = {
     "title": "Match Scorecard",
     "line": "A cricket scorecard, typed ball by ball.",
     "stage": "SHIPPED",
-    "now": "shipped, rebuilt from my plan",
+    "now": "shipped, written by me",
     "next": "lists → project 02",
 }
 STAGES = ["SPEC", "AI DRAFT", "MY PLAN", "REBUILD", "SAME OUTPUT", "SHIP"]

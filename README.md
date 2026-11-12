@@ -8,7 +8,7 @@
 
 <a href="https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard"><img src="assets/bench.svg" width="100%" alt="Active bench: project 01 Match Scorecard, shipped"></a>
 
-> **Just shipped:** [🏏 01 Match Scorecard](https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard), rebuilt from my own plan with the same output as the AI's draft. **Next on the desk:** lists, then project 02.
+> **Just shipped:** [🏏 01 Match Scorecard](https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard), written by me with the AI's draft closed, and the same output. **Next on the desk:** lists, then project 02.
 
 ### `02 // THE LADDER`
 
