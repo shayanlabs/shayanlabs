@@ -1,14 +1,14 @@
-<img src="assets/banner.svg" width="100%" alt="Shayan Umer: AI writes the first draft. I read it, break it, and make it mine. Python first, then up the ladder.">
+<img src="assets/banner.svg" width="100%" alt="Shayan Umer: AI writes the first draft. I plan it, then rebuild it myself. Python first, then up the ladder.">
 
 ### `00 // THE RULE`
 
-**If I can't explain a line, it doesn't ship.** AI writes the first draft. I write the spec, explain every chunk, predict what it does, run it, break it and build a small one from scratch. That's how I'm learning **Python first**, then climbing to maths, data, machine learning and LLMs, one rung at a time.
+**If I can't explain a line, it doesn't ship.** AI writes the first draft. I write the spec, turn the code into my own plan in plain English, then close the code and rebuild it from that plan until both print the same thing. That's how I'm learning **Python first**, then climbing to maths, data, machine learning and LLMs, one rung at a time.
 
 ### `01 // ACTIVE BENCH`
 
-<a href="https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard"><img src="assets/bench.svg" width="100%" alt="Active bench: project 01 Match Scorecard, at the SPEC stage of the pipeline"></a>
+<a href="https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard"><img src="assets/bench.svg" width="100%" alt="Active bench: project 01 Match Scorecard, shipped"></a>
 
-> **On the desk now:** writing the spec for a cricket scorecard. Next comes the AI's draft, and then I explain it chunk by chunk.
+> **Just shipped:** [🏏 01 Match Scorecard](https://github.com/shayanlabs/python-projects/tree/main/01-match-scorecard), rebuilt from my own plan with the same output as the AI's draft. **Next on the desk:** lists, then project 02.
 
 ### `02 // THE LADDER`
 
@@ -48,16 +48,22 @@ I used one counter both to count every set and to remember which set was best. S
 Round brackets around one number give you one plain number. `[0.0, 0.0]` is a list, and `(0.0, 0.0)` is a tuple. One character, and the whole program breaks.
 </details>
 
+<details>
+<summary><b>I forgot the brackets.</b></summary>
+<br>
+
+I wrote `answer.isdecimal` instead of `answer.isdecimal()`. Without the brackets the check never runs, so letters went straight into `int()` and crashed it. A method only does its job when you call it.
+</details>
+
 ### `04 // HOW I BUILD`
 
 ```text
 spec      → I write exactly what it must do
 draft     → AI writes the first version
-explain   → I explain every chunk in my own words
-predict   → I say what it prints before I run it
-modify    → I add features by hand
-bug hunt  → I find a planted bug myself; AI never debugs for me
-make      → I build a small one from a blank file
+plan      → I turn its code into numbered steps in plain English
+rebuild   → I close the code and write it again from my plan
+same out  → both versions print the same thing on the same input
+ship      → only what I can explain; AI never debugs for me
 ```
 
 ### `05 // PING`
